@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cinzel', 'Playfair Display', Georgia, serif;
+    --font-sans: 'Inter', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #0b0c0e;
+    color: #e6e3da;
+    font-family: var(--font-sans);
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  #root {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* Custom Victorian Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #14161a;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #6b5327;
+    border-radius: 2px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #daa520;
+  }
+}
+
+/* Brass and Bronze Metallic Accents */
+.brass-gradient {
+  background: linear-gradient(135deg, #4d3814 0%, #daa520 50%, #4d3814 100%);
+}
+
+.brass-border {
+  border: 1px solid #8a652a;
+}
+
+.plaque-shadow {
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(218, 165, 32, 0.25);
+}
